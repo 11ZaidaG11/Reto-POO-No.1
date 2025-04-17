@@ -6,7 +6,11 @@ Crear una función que realice operaciones básicas (suma, resta, multiplicació
 Realice una función que permita validar si una palabra es un palíndromo. Condición: No se vale hacer slicing para invertir la palabra y verificar que sea igual a la original.
 
 Idea: 
-- Contar cantidad de caracteres de cada string.
+- Hacer una lista de palindromos.
+- Hacer una lista de palabras comunes.
+- Crear una lista con ambos tipos de palabras.  
+(Por cada palabra en la tercera lista)
+- Contar cantidad de caracteres.
 - Si len es par partir el string en 2 y comparar elementos n y -n.
 - Si len es impar.
 
@@ -14,7 +18,7 @@ Idea:
 Escribir una función que reciba una lista de números y devuelva solo aquellos que son primos. La función debe recibir una lista de enteros y retornar solo aquellos que sean primos.  
 
 Idea:
-- Crear una lista de numeros aleatorios de tamaño aleatorio.
+- Crear una lista de numeros aleatorios de tamaño aleatorio.  
 Un numero primo solo se puede dividir por 1 y por si mismo.  
 (Por cada elemento n en la lista)
 - Crear una lista de 2 hasta n.
