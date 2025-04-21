@@ -1,33 +1,35 @@
 import random
 
-prime = False
-list_prime: list = []
-list_random: list = []
-l: int = random.randrange(5, 16)
 
-for i in range(l):
-    elem = random.randrange(1, 101)
-    list_random.append(elem)
+def create_list():
+    list_random: list = []
+    lon: int = random.randrange(5, 16)
 
-for n in list_random:
-    suma = 0
-    list_b = []
-    list_c = []
+    for _ in range(lon):
+        elem = random.randrange(1, 101)
+        list_random.append(elem)
+    return list_random
 
-    for i in range(2, n+1):
-        list_b.append(i)
-        for e in list_b:
-            if n // e == 0:
-                list_c.append(e)
-        if len(list_c) == 2:
+def verification(list_random:list):
+    list_prime: list = []
+
+    for n in list_random:
+        dividers = []
+
+        for i in range(1, n+1):
+            if n % i == 0:
+                dividers.append(i)
+        if len(dividers) == 2:
             list_prime.append(i)
-            
-if not list_prime:
-    print("No hay numeros primos en la lista")
+                
+    if not list_prime:
+        return "Niniguno"
+    else:
+        return list_prime
 
 
-print(l)
-print(list_random)
-print(list_b)
-print(list_c)
-print(list_prime)
+if __name__ == "__main__":
+    cl = create_list()
+    v = verification(cl)
+    print("En la lista:", cl)
+    print("Los numeros primos son:", v)
