@@ -19,7 +19,7 @@ if __name__ == "__main__":
     "- para resta\n" \
     "* para multiplicación\n" \
     "/ para división")
-    sign = str(input("→ "))
-    
+    sign: str = input("→ ")
+
     res = operation(num_a, num_b, sign)
     print(f"{num_a} {sign} {num_b} = {res}")

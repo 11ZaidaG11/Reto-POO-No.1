@@ -43,8 +43,15 @@ Idea:
 (Por cada elemento i en la lista)
 - Sumar con i y el numero siguiente, detenerse cuando la posicion de i sea -1.
 - Agregar todos los resultados a una lista.
-- Imprimir el numero más grande.
+- Ordenar la lista de mator a menor.
+- Imprimir el primer numero de la lista.
 
 ### Punto 5
 Escribir una función que reciba una lista de string y retorne unicamente aquellos elementos que tengan los mismos caracteres. e.g. entrada: ["amor", "roma", "perro"], salida ["amor", "roma"]
 
+Idea:
+- Pedir al usuario que ingrese las palabras.
+- Hacer una lista con las palabras.
+(Por cada palabra en la lista)
+- Organizar las letras segun ASCII.
+- Comparar.
